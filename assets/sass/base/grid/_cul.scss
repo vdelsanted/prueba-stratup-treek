@@ -1,0 +1,46 @@
+@mixin set-column {
+  padding: 5px;
+}
+
+@mixin set-col {
+  @for $i from 1 through 12 {
+    .cul-#{$i} {
+      @include set-column();
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@mixin set-col-sm {
+  @for $i from 1 through 12 {
+    .cul-sm-#{$i} {
+      @include set-col();
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@mixin set-col-md {
+  @for $i from 1 through 12 {
+    .cul-md-#{$i} {
+      @include set-col();
+      grid-column: span #{$i};
+    }
+  }
+}
+.cont,
+.cont-fluid {
+  .rowe {
+    @include set-col();
+
+    @media screen and (min-width: $viewport-small){
+      @include set-col-sm();
+
+    }
+    @media screen and (min-width: $viewport-medium){
+      @include set-col-md();
+
+    }
+
+  }
+}

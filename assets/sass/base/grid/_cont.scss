@@ -1,0 +1,15 @@
+@mixin set-container {
+  padding: 5px;
+
+}
+
+.cont {
+  @include set-container();
+  width: 90vw;
+    margin: 0 auto;
+}
+
+.cont-fluid {
+  @include set-container();
+width: 100vw;
+}

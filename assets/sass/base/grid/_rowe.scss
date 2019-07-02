@@ -1,0 +1,9 @@
+.cont, .cont-fluid {
+
+  .rowe {
+    display: grid;
+    grid-template-columns: repeat($number-columns, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+  }
+}
