@@ -1,6 +1,6 @@
-.cont, .cont-fluid {
+.container, .container-fluid {
 
-  .rowe {
+  .row {
     display: grid;
     grid-template-columns: repeat($number-columns, 1fr);
     grid-gap: 10px;

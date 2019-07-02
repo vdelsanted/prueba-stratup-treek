@@ -4,7 +4,7 @@
 
 @mixin set-col {
   @for $i from 1 through 12 {
-    .cul-#{$i} {
+    .col-#{$i} {
       @include set-column();
       grid-column: span #{$i};
     }
@@ -13,7 +13,7 @@
 
 @mixin set-col-sm {
   @for $i from 1 through 12 {
-    .cul-sm-#{$i} {
+    .col-sm-#{$i} {
       @include set-col();
       grid-column: span #{$i};
     }
@@ -22,15 +22,15 @@
 
 @mixin set-col-md {
   @for $i from 1 through 12 {
-    .cul-md-#{$i} {
+    .col-md-#{$i} {
       @include set-col();
       grid-column: span #{$i};
     }
   }
 }
-.cont,
-.cont-fluid {
-  .rowe {
+.container,
+.container-fluid {
+  .row {
     @include set-col();
 
     @media screen and (min-width: $viewport-small){

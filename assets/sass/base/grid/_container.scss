@@ -3,13 +3,13 @@
 
 }
 
-.cont {
+.container {
   @include set-container();
   width: 90vw;
     margin: 0 auto;
 }
 
-.cont-fluid {
+.container-fluid {
   @include set-container();
 width: 100vw;
 }
