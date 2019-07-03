@@ -1830,6 +1830,7 @@ header {
   font-weight: 400;
   font-size: 12px;
   line-height: 25px;
+  text-align: left;
 }
 
 .hero-section__img svg {
@@ -1862,13 +1863,64 @@ header {
   margin-right: 7vw;
 }
 
-.caracteristicas-text {
-  line-height: 25px;
+.caracteristicas-text__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 45px;
 }
-.caracteristicas-text h4 {
+
+.caracteristicas-text__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.precios-title__precios {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.precios-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+.precios-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+}
+.precios-cards .container {
+  border: 1px solid red;
+  background-color: orange;
+  padding: 20px 20px;
+  margin: 40px 50px;
+  float: right;
+}
+.precios-cards .container h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.precios-cards .container h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.precios-cards .container hr {
+  width: 100%;
+  color: #333745;
 }
 
 /*# sourceMappingURL=main.css.map */

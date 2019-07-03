@@ -25,6 +25,7 @@
   font-weight: $regular;
   font-size: $x-small;
   line-height: 25px;
+  text-align: left;
 }
 
 .hero-section__img svg {
@@ -57,11 +58,69 @@
   margin-right: 7vw;
 }
 
-.ccaracteristicas-text__title {
-  line-height: 25px;
+.caracteristicas-text__title {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $large;
+  line-height: 45px;
+}
+
+.caracteristicas-text__text {
   font-family: $open-sans;
   font-weight: $regular;
   font-size: $x-small;
+  line-height: 25px;
+  text-align: left;
 
+}
+
+.precios-title__precios {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.precios-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+.precios-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+
+  .container {
+    border: 1px solid red;
+    background-color: orange;
+    padding: 20px 20px;
+    margin: 40px 50px;
+    float: right;
+
+
+    h5 {
+      font-family: $open-sans;
+      font-weight: $regular;
+      font-size: $large;
+    }
+
+    h2 {
+      font-family: $raleway;
+      font-weight: $bold;
+      font-size: $xx-large;
+    }
+
+    hr {
+      width: 100%;
+      color: $onyx;
+    }
+  }
 
 }
