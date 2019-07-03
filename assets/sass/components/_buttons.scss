@@ -1,0 +1,23 @@
+.header-navigation__button {
+  display: inline-block;
+  margin: 1vw 1vh;
+}
+
+.header-navigation__button-inic {
+  border-color: $white;
+  background-color: $white;
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: $medium;
+  margin-right: 20px;
+}
+
+.header-navigation__button-reg {
+  border-color: $bali-blue;
+  background-color: $bali-blue;
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: $medium;
+  color: $white;
+  padding: 6px 15px;
+}

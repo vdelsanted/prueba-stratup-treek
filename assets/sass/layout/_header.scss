@@ -1,0 +1,35 @@
+header {
+  margin-top: 2vh;
+}
+
+.header-navigation__logo {
+  display: flex;
+
+  h3 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $xxx-large;
+  }
+
+  small {
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $x-small;
+  }
+}
+
+.header-navigation__menu {
+  justify-content: flex-end;
+  margin-left: -30vw;
+  margin-top: 2vh;
+
+  li {
+    display: inline-table;
+    padding: 8px;
+    margin-right: 20px;
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $x-small;
+    color: $spanish-gray;
+  }
+}
