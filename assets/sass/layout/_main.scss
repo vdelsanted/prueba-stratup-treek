@@ -57,13 +57,11 @@
   justify-content: space-between;
   margin-right: 7vw;
   animation-name: opacity;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-  position: absolute;
-  bottom: 0;
-  left: 45vw;
+  animation-direction: normal;
+
 }
 
 @keyframes opacity {
@@ -72,9 +70,13 @@
     opacity: 0;
   }
 
+  50% {
+    bottom: 0;
+    opacity: 0.5;
+  }
+
   100% {
-    bottom: 40vh;
-    transform: scale(5);
+    bottom: 0;
     opacity: 1,
   }
 
@@ -108,20 +110,16 @@
 
 .precios-cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70vw;
-}
-
-.precios-cards {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10vw;
 
   .container {
+    width: 300px;
+    height: 400px;
     border: 1px solid red;
-    background-color: orange;
+    background-color: $white;
+    border-color: $onyx;
     padding: 20px 20px;
     margin: 40px 50px;
     float: right;
@@ -140,8 +138,15 @@
     }
 
     hr {
-      width: 100%;
-      color: $onyx;
+      width: 90%;
+      color: $lavender-gray;
+    }
+
+    li {
+      font-family: $open-sans;
+      font-weight: $regular;
+      font-size: $small;
+      line-height: 2;
     }
   }
 
