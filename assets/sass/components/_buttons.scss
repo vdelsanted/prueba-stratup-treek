@@ -39,6 +39,14 @@
   font-size: $x-small;
   color: $white;
   padding: 10px;
+
+  &:hover {
+    background-color: $hover-state;
+  }
+
+  &:focus {
+    background-color: $focus-state;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -49,5 +57,13 @@
 
   .header-navigation__button button {
     display: none;
+
+    &:hover {
+      background-color: $hover-state;
+    }
+
+    &:focus {
+      background-color: $focus-state;
+    }
   }
 }

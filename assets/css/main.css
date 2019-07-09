@@ -89,6 +89,37 @@ table {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: #FFF;
+  }
+
+  .caracteristicas-grafic {
+    display: flex;
+    justify-content: space-between;
+    animation-name: opacity;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  @keyframes opacity {
+    0% {
+      bottom: 0;
+      opacity: 0;
+    }
+    50% {
+      bottom: 0;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+}
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1803,6 +1834,12 @@ small {
   color: #FFF;
   padding: 10px;
 }
+.precios-img__card-button:hover {
+  background-color: #77D1DD;
+}
+.precios-img__card-button:focus {
+  background-color: #8F9199;
+}
 
 @media only screen and (max-width: 375px) {
   body {
@@ -1812,6 +1849,12 @@ small {
 
   .header-navigation__button button {
     display: none;
+  }
+  .header-navigation__button button:hover {
+    background-color: #77D1DD;
+  }
+  .header-navigation__button button:focus {
+    background-color: #8F9199;
   }
 }
 .nav-bar {
@@ -2063,6 +2106,7 @@ header {
     line-height: 30px;
     margin-top: 2vh;
     padding-bottom: 5px;
+    z-index: 1;
   }
 
   .hero-section__desc {
@@ -2071,31 +2115,29 @@ header {
     font-size: 12px;
     line-height: 15px;
     text-align: left;
+    z-index: 1;
   }
 
   .hero-section__img svg {
-    font-size: 100%;
     display: inline-block;
     align-items: flex-start;
     transform: scale(1.5) translateX(-120px);
+    z-index: -1;
+  }
+
+  .caracteristicas .container {
+    display: flex;
+    flex-direction: column;
   }
 
   .caracteristicas-title h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 1vh;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .caracteristicas .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70vw;
-    margin-top: 8vh;
+    margin-top: -12vh;
   }
 
   .caracteristicas-text__title {
@@ -2103,23 +2145,26 @@ header {
     font-weight: 700;
     font-size: 20px;
     line-height: 45px;
+    display: flex;
+    margin-top: 4vh;
+    text-align: left;
+    margin-left: -8vw;
   }
 
   .caracteristicas-text__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 12px;
+    color: #221D23;
     line-height: 25px;
     text-align: left;
-    float: left;
+    margin-left: -8vw;
   }
 
   .precios-img {
     background-image: url(../img/bg-price.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    padding-bottom: 10rem;
+    background-size: cover auto;
   }
 
   .precios-img__title-precios {
@@ -2130,26 +2175,24 @@ header {
     justify-content: center;
     align-items: center;
     color: #FFF;
-    margin-top: 10vh;
-    padding-top: 20%;
-    padding-bottom: 10vh;
+    margin-top: 20vh;
+    padding-top: 150px;
   }
 
   .precios-img__cards {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10vw;
   }
   .precios-img__cards .container {
-    width: 250px;
-    height: 400px;
+    width: 220px;
+    height: 500px;
     border: 1px solid red;
     background-color: #FFF;
     border-color: #333745;
     padding: 20px 20px;
     margin: 40px 50px;
-    float: right;
   }
   .precios-img__cards .container h5 {
     font-family: "Open Sans", sans-serif;
@@ -2177,7 +2220,7 @@ header {
   }
 
   .precios-img__cards-hr2 {
-    margin-top: 13vh;
+    margin-top: 8vh;
   }
 
   .precios-img__cards-hr2f {
@@ -2205,6 +2248,33 @@ footer {
 
 .footer-menu__spa {
   padding-left: 45vw;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: #FFF;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #221D23;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  .footer-menu li {
+    display: inline-table;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #AEACAF;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

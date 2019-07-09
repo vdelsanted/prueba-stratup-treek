@@ -20,3 +20,30 @@ footer {
 .footer-menu__spa {
   padding-left: 45vw;
 }
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: $white;
+  }
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    background-color: $rasing-black;
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+
+    li {
+      display: inline-table;
+      font-family: $raleway;
+      font-weight: $regular;
+      font-size: $x-small;
+      color: $silver-chalice;
+      justify-content: center;
+    }
+  }
+}
