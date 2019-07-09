@@ -1,0 +1,22 @@
+footer {
+  background-color: $rasing-black;
+}
+.footer-menu {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2vh;
+  padding: 30px;
+
+  li {
+    display: inline-table;
+    font-family: $raleway;
+    font-weight: $regular;
+    font-size: $x-small;
+    color: $silver-chalice;
+    margin-left: 5vw;
+  }
+}
+
+.footer-menu__spa {
+  padding-left: 45vw;
+}

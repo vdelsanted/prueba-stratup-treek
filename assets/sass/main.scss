@@ -1,5 +1,5 @@
 // Vendors
-// @import 'vendors/bootstrap-4.3.1/bootstrap';
+//@import 'vendors/bootstrap-4.3.1/bootstrap';
 
 // Abstracts
 @import 'abstracts/variables';
@@ -19,6 +19,7 @@
 // Layout
 @import 'layout/header';
 @import 'layout/main';
+@import 'layout/footer';
 
 // Pages
 @import 'pages/pages';

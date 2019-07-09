@@ -1,6 +1,6 @@
 .header-navigation__button {
   display: inline-block;
-  margin: 1vw 1vh;
+  margin: $regular-size;
 }
 
 .header-navigation__button-inic {
@@ -13,25 +13,41 @@
 }
 
 .header-navigation__button-reg {
-  border-color: $ball-blue;
+  border-color: none;
   background-color: $ball-blue;
   font-family: $open-sans;
   font-weight: $regular;
   font-size: $x-small;
   color: $white;
   padding: 6px 15px;
+
+  &:hover {
+    background-color: $hover-state;
+  }
+
+  &:focus {
+    background-color: $focus-state;
+  }
 }
 
-.precios-card__button {
-  width: 300px;
-  height: 30px;
+.precios-img__card-button {
+  width: $large-size;
   background-color: $ball-blue;
   border-color: $ball-blue;
   font-family: $open-sans;
   font-weight: $regular;
   font-size: $x-small;
   color: $white;
-  display: flex;
-  align-items: flex-end;
-  align-content: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: $white;
+  }
+
+  .header-navigation__button button {
+    display: none;
+  }
 }

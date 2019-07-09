@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    background-color: $white;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: $white;
+  }
+}
+
+.caracteristicas-grafic {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 7vw;
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+}
+
+@keyframes opacity {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1,
+  }
+
+}
