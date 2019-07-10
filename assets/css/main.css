@@ -2798,7 +2798,7 @@ header {
 }
 
 .precios-img {
-  background-image: url(../img/bg-price.png);
+  background-image: url(../images/bg-price.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -2942,7 +2942,7 @@ header {
   }
 
   .precios-img {
-    background-image: url(../img/bg-price.png);
+    background-image: url(../images/bg-price.png);
     background-repeat: no-repeat;
     background-size: cover auto;
   }
