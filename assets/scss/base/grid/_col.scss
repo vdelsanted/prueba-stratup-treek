@@ -33,6 +33,11 @@
   .row {
     @include set-col();
 
+    @media screen and (min-width: $viewport-xlarge){
+      @include set-col-sm();
+
+    }
+
     @media screen and (min-width: $viewport-small){
       @include set-col-sm();
 

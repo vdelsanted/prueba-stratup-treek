@@ -1,0 +1,296 @@
+.hero-section {
+  display: flex;
+  margin-left: 5vw;
+}
+
+.hero-section .container {
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+
+.hero-section__title {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $xxx-large;
+  line-height: 40px;
+  width: 25vw;
+  margin-top: 8vh;
+  padding-bottom: 20px;
+}
+
+.hero-section__desc {
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: $x-small;
+  line-height: 25px;
+  text-align: left;
+}
+
+.hero-section__img svg {
+  font-size: 100%;
+  display: inline-block;
+  align-items: flex-start;
+  transform: scale(1.2)
+  translateX(-300px);
+}
+
+.caracteristicas-title h3 {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $x-large;
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caracteristicas .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin-top: 8vh;
+}
+
+.caracteristicas-text__title {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $large;
+  line-height: 45px;
+}
+
+.caracteristicas-text__text {
+  font-family: $open-sans;
+  font-weight: $regular;
+  font-size: $x-small;
+  line-height: 25px;
+  text-align: left;
+
+}
+
+.precios-img {
+  background-image: url(../img/bg-price.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding-bottom: 10rem;
+}
+
+.precios-img__title-precios {
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  margin-top: 10vh;
+  padding-top: 20%;
+  padding-bottom: 10vh;
+}
+
+.precios-img__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 10vw;
+
+  .container {
+    width: 250px;
+    height: 400px;
+    border: 1px solid red;
+    background-color: $white;
+    border-color: $onyx;
+    padding: 20px 20px;
+    margin: 40px 50px;
+    float: right;
+
+
+    h5 {
+      font-family: $open-sans;
+      font-weight: $regular;
+      font-size: $large;
+    }
+
+    h2 {
+      font-family: $raleway;
+      font-weight: $bold;
+      font-size: $xx-large;
+    }
+
+    hr {
+      width: 90%;
+      color: $lavender-gray;
+    }
+
+    li {
+      font-family: $open-sans;
+      font-weight: $regular;
+      font-size: $small;
+      line-height: 2;
+    }
+  }
+
+}
+
+.precios-img__cards-hr1 {
+  margin-top: 30px;
+}
+
+.precios-img__cards-hr2 {
+  margin-top: 13vh;
+}
+
+.precios-img__cards-hr2f {
+  margin-top: 26vh;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0 auto;
+    background-color: $white;
+  }
+
+  .hero-section {
+    display: flex;
+    width: 100%;
+  }
+
+  .hero-section__title {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large;
+    line-height: 30px;
+    margin-top: 2vh;
+    padding-bottom: 5px;
+    z-index: 1;
+  }
+
+  .hero-section__desc {
+    font-family: $open-sans;
+    font-weight: $regular;
+    font-size: $x-small;
+    line-height: 15px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .hero-section__img svg {
+    display: inline-block;
+    align-items: flex-start;
+    transform: scale(1.5)
+    translateX(-120px);
+    z-index: -1;
+  }
+
+  .caracteristicas .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caracteristicas-title h3 {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12vh;
+  }
+
+  .caracteristicas-text__title {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $large;
+    line-height: 45px;
+    display: flex;
+    margin-top: 4vh;
+    text-align: left;
+    margin-left: -8vw;
+  }
+
+  .caracteristicas-text__text {
+    font-family: $open-sans;
+    font-weight: $regular;
+    font-size: $x-small;
+    color: $rasing-black;
+    line-height: 25px;
+    text-align: left;
+    margin-left: -8vw;
+  }
+
+  .precios-img {
+    background-image: url(../img/bg-price.png);
+    background-repeat: no-repeat;
+    background-size: cover auto;
+  }
+
+  .precios-img__title-precios {
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    margin-top: 20vh;
+    padding-top: 150px;
+  }
+
+  .precios-img__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      width: 220px;
+      height: 500px;
+      border: 1px solid red;
+      background-color: $white;
+      border-color: $onyx;
+      padding: 20px 20px;
+      margin: 40px 50px;
+
+
+      h5 {
+        font-family: $open-sans;
+        font-weight: $regular;
+        font-size: $large;
+      }
+
+      h2 {
+        font-family: $raleway;
+        font-weight: $bold;
+        font-size: $xx-large;
+      }
+
+      hr {
+        width: 90%;
+        color: $lavender-gray;
+      }
+
+      li {
+        font-family: $open-sans;
+        font-weight: $regular;
+        font-size: $small;
+        line-height: 2;
+      }
+    }
+
+  }
+
+  .precios-img__cards-hr1 {
+    margin-top: 30px;
+  }
+
+  .precios-img__cards-hr2 {
+    margin-top: 8vh;
+  }
+
+  .precios-img__cards-hr2f {
+    margin-top: 26vh;
+  }
+}
